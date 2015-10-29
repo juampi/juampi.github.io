@@ -18,7 +18,7 @@
 
     </script>
   </head>
-  <body ng-controller="myController as myCtrl">
+  <body ng-controller="myController as myCtrl" class="indigo lighten-5">
 
     <div class="navbar-fixed">
       <nav class="indigo">
@@ -32,8 +32,8 @@
       </nav>
     </div>
 
-    <section id="contact" class="section scrollspy red lighten-1">
-      <h3 class="center-align">Contact</h3>
+    <section id="contact" class="section scrollspy">
+      <h3 class="center-align">Juan Pablo Rinaldi</h3>
       <div class="row center-align">
         <div class="col s12 m4" ng-repeat="item in myCtrl.contactInfo">
           <i class="medium material-icons" ng-bind="item.icon"></i>
@@ -43,12 +43,12 @@
       </div>
     </section>
 
-    <section id="skills" class="section scrollspy light-green">
-      <h3 class="center-align">Skills</h3>
+    <section id="skills" class="section scrollspy">
+      <h3 class="center-align indigo lighten-2">Skills</h3>
       <div class="row">
         <div class="col s12 m6 l4" ng-repeat="skillCategory in myCtrl.skillCategories">
           <ul class="collection with-header">
-            <li class="collection-header"><h4 class="center-align" ng-bind="skillCategory.name"></h4></li>
+            <li class="collection-header indigo lighten-3"><h4 class="center-align" ng-bind="skillCategory.name"></h4></li>
             <li class="collection-item" ng-repeat="skill in skillCategory.skills">
               <div>
                 <span ng-bind="skill.name"></span>
